@@ -178,12 +178,6 @@ export default function LocationSearchInput(props) {
     }
   };
 
-  console.log("HI");
-  if (props.currentLocationOptional === undefined) {
-    //getLocation();
-    console.log(currentLatLngValue, "CURR");
-  }
-
   return (
     <div>
       <Typography gutterBottom className={classes.labelText}>

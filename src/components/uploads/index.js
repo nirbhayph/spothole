@@ -12,11 +12,14 @@ import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import { UPLOAD_MEDIA } from "./../../utility/constants.js";
 import FilePondPluginFileValidateType from "filepond-plugin-file-validate-type";
+import FilePondPluginFileValidateSize from "filepond-plugin-file-validate-size";
+
 // Register the plugins
 registerPlugin(
   FilePondPluginImageExifOrientation,
   FilePondPluginImagePreview,
-  FilePondPluginFileValidateType
+  FilePondPluginFileValidateType,
+  FilePondPluginFileValidateSize
 );
 
 const useStyles = theme => ({
@@ -71,6 +74,8 @@ class UploadFiles extends React.Component {
               labelIdle={this.props.label}
               allowMultiple={false}
               oninit={() => this.handleInit()}
+              maxFileSize={"10MB"}
+              allowFileSizeValidation={true}
               server={{
                 process: {
                   url: UPLOAD_MEDIA,

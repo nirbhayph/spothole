@@ -2,10 +2,11 @@
 // for a particular path.
 import React from "react";
 import Auth from "./components/authentication";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core";
+import NotFound from "./components/not_found";
 
 const theme = createMuiTheme({
   palette: {
@@ -55,6 +56,7 @@ function App() {
             <Route path="/" exact>
               <Auth linkTo="/dashboard" />
             </Route>
+            <Route path="*" exact={true} component={NotFound}></Route>
           </Switch>
         </div>
       </Router>

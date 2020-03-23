@@ -14,7 +14,8 @@ export default class AlertDialog extends React.Component {
   // feedback route as well after submission
   handleClose = () => {
     if (this.props.linkTo !== undefined) {
-      window.location.href = this.props.linkTo;
+      window.location.href = "/spothole/#" + this.props.linkTo;
+      window.location.reload();
     }
     this.props.updateCloseDialogState();
   };
