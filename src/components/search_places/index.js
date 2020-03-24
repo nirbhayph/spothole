@@ -95,44 +95,6 @@ export default function LocationSearchInput(props) {
     []
   );
 
-  const showPosition = position => {
-    axios
-      .get(
-        "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
-          position.coords.latitude +
-          "," +
-          position.coords.longitude +
-          "&key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ"
-      )
-      .then(
-        result => {
-          if (props.currentLocationOptional === undefined) {
-            setCurrentLocationValue(
-              result["data"]["results"][0]["formatted_address"]
-            );
-            setCurrentLatLngValue(
-              result["data"]["results"][0]["geometry"]["location"]
-            );
-            props.updateLocation(
-              result["data"]["results"][0]["formatted_address"],
-              result["data"]["results"][0]["geometry"]["location"]
-            );
-          }
-        },
-        error => {
-          console.info("Cannot update current location");
-        }
-      );
-  };
-
-  const getLocation = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-      console.info("Geolocation is not supported by this browser.");
-    }
-  };
-
   React.useEffect(() => {
     let active = true;
 
@@ -253,7 +215,7 @@ export default function LocationSearchInput(props) {
             <Chip
               style={{ marginBottom: "25px", marginTop: "7px" }}
               icon={<AddLocationIcon />}
-              label={currentLocation}
+              label={props.permissionLocationValue}
               variant="outlined"
               color="primary"
             />

@@ -46,10 +46,14 @@ class CreateReport extends React.Component {
       locationLatLng: "",
       makeBoxEmptyFunction: "",
       showSubmittedFeedback: false,
+      permissionLocation: "",
+      permissionLocationLatLng: "",
       userId: props.userId
     };
 
     self = this;
+
+    this.getLocation();
   }
 
   setLocation = (location, latLngLocation) => {
@@ -58,6 +62,45 @@ class CreateReport extends React.Component {
         location: location,
         locationLatLng: latLngLocation
       });
+    }
+  };
+
+  setPermissionBasedLocation = (location, latLngLocation) => {
+    if (this.state.location !== location) {
+      self.setState({
+        permissionLocation: location,
+        permissionLocationLatLng: latLngLocation
+      });
+    }
+  };
+
+  showPosition = position => {
+    axios
+      .get(
+        "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
+          position.coords.latitude +
+          "," +
+          position.coords.longitude +
+          "&key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ"
+      )
+      .then(
+        result => {
+          this.setPermissionBasedLocation(
+            result["data"]["results"][0]["formatted_address"],
+            result["data"]["results"][0]["geometry"]["location"]
+          );
+        },
+        error => {
+          console.info("Cannot update current location");
+        }
+      );
+  };
+
+  getLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this.showPosition);
+    } else {
+      console.info("Geolocation is not supported by this browser.");
     }
   };
 
@@ -86,9 +129,21 @@ class CreateReport extends React.Component {
   };
 
   submitForm = () => {
+    let postLocation, postLocationLatLng;
+    if (this.state.location === "" && this.state.permissionLocation === "") {
+      postLocation = "";
+    } else {
+      if (this.state.location !== "") {
+        postLocation = this.state.location;
+        postLocationLatLng = this.state.locationLatLng;
+      } else {
+        postLocation = this.state.permissionLocation;
+        postLocationLatLng = this.state.permissionLocationLatLng;
+      }
+    }
     if (
       this.state.description === "" ||
-      this.state.location === "" ||
+      postLocation === "" ||
       this.state.severity === ""
     ) {
       this.setState({
@@ -100,7 +155,14 @@ class CreateReport extends React.Component {
       });
       axios
         .post(SUBMIT_USER_REPORT, {
-          data: this.state
+          data: {
+            description: this.state.description,
+            location: postLocation,
+            locationLatLng: postLocationLatLng,
+            imageURL: this.state.imageURL,
+            userId: this.state.userId,
+            severity: this.state.severity
+          }
         })
         .then(
           res => {
@@ -164,7 +226,10 @@ class CreateReport extends React.Component {
                     by the the concerned authority. Don't forget to add
                     supporting comments to your report.
                   </Typography>
-                  <LocationSearchInput updateLocation={this.setLocation} />
+                  <LocationSearchInput
+                    updateLocation={this.setLocation}
+                    permissionLocationValue={this.state.permissionLocation}
+                  />
                   <StepSlider updateSeverity={this.setSeverity} />
                   <DescriptionBox
                     passMakeEmpty={this.makeEmpty}
