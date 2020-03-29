@@ -80,7 +80,7 @@ export default function DetailedDataCard(props) {
             marginBottom="15px"
             color={classes.headerTextColor.color}
           />
-          <CustomizedSteppers stepNumber={props.stepNumber} />
+          <CustomizedSteppers stepNumber={props.data.stepNumber} />
 
           {/* for the complaint description component*/}
           <p style={{ marginTop: "120px", textAlign: "justify" }}>

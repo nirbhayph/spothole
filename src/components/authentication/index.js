@@ -14,7 +14,12 @@ import AddIcon from "@material-ui/icons/Add";
 import Fab from "@material-ui/core/Fab";
 import HeaderSeparator from "./../header_separator";
 import SignUp from "./../signup";
-import { HOST_NAME, POST_PROFILE_DATA } from "./../../utility/constants.js";
+import {
+  HOST_NAME,
+  POST_PROFILE_DATA,
+  VALIDATE_USER,
+  UA_LOGIN
+} from "./../../utility/constants.js";
 import axios from "axios";
 
 class Auth extends Component {
@@ -72,7 +77,7 @@ class Auth extends Component {
   };
 
   // logout and reset the signedIn state variable
-  logout = () => {
+  logout = redirectTo => {
     if (this.state.isSignedIn) {
       window.gapi.auth2
         .getAuthInstance()
@@ -84,7 +89,7 @@ class Auth extends Component {
             },
             () => {
               localStorage.setItem("signedIn", false);
-              this.urlRedirect(HOST_NAME);
+              this.urlRedirect(redirectTo || HOST_NAME);
             }
           );
         });
@@ -116,16 +121,33 @@ class Auth extends Component {
     }
   };
 
-  // updates or inserts the first time user profile after logging in
-  postProfileData = basicProfile => {
-    axios.post(POST_PROFILE_DATA, {
-      data: {
-        userId: basicProfile.getId(),
-        emailId: basicProfile.getEmail(),
-        name: basicProfile.getName(),
-        photoURL: basicProfile.getImageUrl()
-      }
-    });
+  // updates or inserts the first time authority profile after logging in
+  validateAndPostProfileData = basicProfile => {
+    axios
+      .post(VALIDATE_USER, {
+        data: {
+          emailId: basicProfile.getEmail()
+        }
+      })
+      .then(response => {
+        if (response.data === "allowed") {
+          axios.post(POST_PROFILE_DATA, {
+            data: {
+              userId: basicProfile.getId(),
+              emailId: basicProfile.getEmail(),
+              name: basicProfile.getName(),
+              photoURL: basicProfile.getImageUrl()
+            }
+          });
+        } else {
+          this.logout(UA_LOGIN);
+          console.info("Unauthorized Login");
+        }
+      })
+      .catch(err => {
+        this.logout();
+        console.info("Cannot login at this time!");
+      });
   };
 
   // success callback
@@ -148,7 +170,7 @@ class Auth extends Component {
         profilePhotoURL: basicProfile.getImageUrl()
       },
       () => {
-        this.postProfileData(basicProfile);
+        this.validateAndPostProfileData(basicProfile);
       }
     );
   }

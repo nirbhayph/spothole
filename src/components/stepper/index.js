@@ -12,6 +12,9 @@ import DoneAll from "@material-ui/icons/DoneAll";
 import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStation";
 import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
 import StepConnector from "@material-ui/core/StepConnector";
+import CloseIcon from "@material-ui/icons/Close";
+
+let currentSteps;
 
 const ColorlibConnector = withStyles({
   alternativeLabel: {
@@ -66,12 +69,20 @@ function ColorlibStepIcon(props) {
   const classes = useColorlibStepIconStyles();
   const { active, completed } = props;
 
-  const icons = {
-    1: <Create />,
-    2: <DoneAll />,
-    3: <TransferWithinAStationIcon />,
-    4: <EmojiEmotionsIcon />
-  };
+  let icons = {};
+  if (currentSteps.length === 2) {
+    icons = {
+      1: <Create />,
+      2: <CloseIcon />
+    };
+  } else {
+    icons = {
+      1: <Create />,
+      2: <DoneAll />,
+      3: <TransferWithinAStationIcon />,
+      4: <EmojiEmotionsIcon />
+    };
+  }
 
   return (
     <div
@@ -91,15 +102,19 @@ ColorlibStepIcon.propTypes = {
   icon: PropTypes.node
 };
 
-function getSteps() {
+function getSteps(stepNumber) {
+  if (stepNumber === 4) {
+    return ["Submitted", "Cancelled"];
+  }
   return ["Submitted", "Approved", "Working", "Completed"];
 }
 
 export default function CustomizedSteppers(props) {
   const [activeStep, setActiveStep] = React.useState(props.stepNumber);
-  const steps = getSteps();
+  const steps = getSteps(props.stepNumber);
+  currentSteps = steps;
   return (
-    <div style={{ textAlign: "left" }}>
+    <div style={{ textAlign: "left", minWidth: "300px" }}>
       <Stepper
         alternativeLabel
         activeStep={props.stepNumber}

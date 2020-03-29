@@ -11,6 +11,7 @@ export const SUBMIT_USER_REPORT = AWS_SERVER_DOMAIN + "/api/submit/report";
 export const UPLOAD_MEDIA = AWS_SERVER_DOMAIN + "/api/upload";
 export const DETECT_SINGLE_IMAGE = AWS_SERVER_DOMAIN + "/api/detect/single";
 export const POST_PROFILE_DATA = AWS_SERVER_DOMAIN + "/api/profile/update";
+export const VALIDATE_USER = AWS_SERVER_DOMAIN + "/api/user/validate";
 export const HOST_NAME = "http://nirbhay.me/spothole";
 export const AUTHORITY_CHAT_LOGO = "https://i.ibb.co/Nry0dDp/image.png";
 export const ROUTE_ICON_IMAGE =
@@ -21,3 +22,4 @@ export const ROUTE_ICON_IMAGE_MEDIUM =
   "https://i.ibb.co/RC2LmDh/output-onlinepngtools-1.png";
 export const ROUTE_ICON_IMAGE_HIGH =
   "https://i.ibb.co/kMZV43H/output-onlinepngtools.png";
+export const UA_LOGIN = "https://nirbhay.me/spothole/UALogin";
