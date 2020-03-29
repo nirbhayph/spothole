@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69ca24c5bc46107ff95cddac63e2ecf3",
+    "revision": "5d2053ef2f3228d3024ab25f2ae45313",
     "url": "/spothole/index.html"
   },
   {
