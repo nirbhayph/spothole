@@ -189,3 +189,7 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 ### Deploying 
 
 The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
+
+### Project Structure
+
+Link to project's directory structure: https://nirbhay.me/spothole/ProjectStructure/
