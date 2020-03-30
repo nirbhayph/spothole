@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Spothole Citizen Web/Mobile App
 
-## Available Scripts
+### Introduction
 
-In the project directory, you can run:
+A major problem being faced by municipalities around the world is maintaining the
+condition of roads be it summer, the monsoons (when it is at its worst) or any weather
+condition as a matter of fact. And although it’s the responsibility of the authorities to make
+sure the roads are free of damage, at times they overlook the problem, and most times don’t
+even know that the problem exists. According to “Safety Resource Center”, approximately
+3 Billion US Dollars are spent by motorists for repair of blown tires, busted axles, and other
+damage to their vehicles ("Study: Pothole Damage Costs U.S. Drivers $3B a Year," 2016).
+Over the past five years around 16 million drivers across the U.S. have suffered damage
+from potholes as per an article from “American Automobile Association (AAA)”
+(Giarratana, 2018).
 
-### `npm start`
+Maintaining the road condition is a challenge with constant weather changes, wear
+and tear, low budgets for the municipalities. Also, not to forget keeping people informed is
+a task. So, this is an app aimed at solving the challenges mentioned. A reporting system,
+where the citizen can capture the scene of an area, which will be fed to a machine learning
+model that will geocode, validate and track down potholes in the scene. This has been
+achieved using object tracking on multiple images and developed using
+convolutional neural networks. Users can see the damage on the roads using a
+mobile application or through their browsers. A dynamic report is also  generated for the closest authority of concern which they can view and update to
+create and manage work orders using their own jurisdiction-based web/mobile app-based
+dashboard.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Motivation
+In articles covered by Guardian News & Media potholes took a deadly toll in 2017, claiming almost 10 lives daily. IndiaTimes stated that "Bereaved Father Mr. Dadarao" filled 600 Potholes in Mumbai in memory of son he lost in a road accident! Inshorts reported, potholes killed more people than terrorists reporting 14,926 deaths in road accidents.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+When we look at the other side of the world, there is a similar situation as reported by American Automobile Association.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Keeping the roads in good condition along with tracking damages is a challenge with constant changes in weather, low budgets for the municipalities. Not to forget keeping the people informed is a task. This project was aimed at solving the challenges mentioned.
