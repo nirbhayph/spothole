@@ -216,7 +216,12 @@ For developers out there, if you wish to contribute to the project, feel free to
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Developer:
-- @nirbhayph - https://github.com/nirbhayph | https://linkedin.com/in/nirbhaypherwani | https://nirbhay.me | pherwani37@gmail.com
+
+### Nirbhay Pherwani 
+* GitHub - @nirbhayph - https://github.com/nirbhayph
+* LinkedIn - https://linkedin.com/in/nirbhaypherwani
+* Profile - https://nirbhay.me
+* Email - pherwani37@gmail.com
 
 ## Acknowledgements and Mentions:
 
