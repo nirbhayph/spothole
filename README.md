@@ -34,3 +34,23 @@ In articles covered by Guardian News & Media potholes took a deadly toll in 2017
 When we look at the other side of the world, there is a similar situation as reported by American Automobile Association.
 
 Keeping the roads in good condition along with tracking damages is a challenge with constant changes in weather, low budgets for the municipalities. Not to forget keeping the people informed is a task. This project was aimed at solving the challenges mentioned.
+
+### Feature Stack 
+| Feature Name | Screen Name |
+| --- | --- |
+| Report a Pothole (Using Camera) | Report |
+| Report a Pothole (Using Media from the File System) | Report |
+| Deep Learning Powered Media Validation Check | Report |
+| Report Pothole Using Current Location | Report |
+| Report Pothole Using Custom Location (Auto Complete Search) | Report |
+| Severity Indicator (0-10) | Report |
+| Custom Text Area Description Box (For Additional Comments) | Report |
+| Successful Report Submission Feedback | Report |
+| Invalid Report Feedback (Powered by Deep Learning Results) | Report |
+| inified Report View Card (Summarized Report Details) | My Complaints |
+| Stepper Indicator (Report Status) | My Complaints, View Report |
+| Static Image based Geographic Map | View Report |
+| Disabled Severity Indicator | View Report |
+| Comments Section | View Report |
+
+
