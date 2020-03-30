@@ -1,3 +1,7 @@
+<img src="https://i.ibb.co/MRnDwpH/oie-png.png" width="206" height="206">
+
+# Spothole - Aritificial Intelligence Powered Pothole Detection, Reporting and Management Solution
+
 ## Spothole Citizen Web/Mobile App
 
 ### Introduction
