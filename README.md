@@ -48,7 +48,7 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 | Custom Alerts (Single and Multi Actionables) | Report |
 | Successful Report Submission Feedback | Report |
 | Invalid Report Feedback (Powered by Deep Learning Results) | Report |
-| inified Report View Card (Summarized Report Details) | My Complaints |
+| Minified Report View Card (Summarized Report Details) | My Complaints |
 | Stepper Indicator (Report Status) | My Complaints, View Report |
 | Static Image based Geographic Map | View Report |
 | Disabled Severity Indicator | View Report |
@@ -75,4 +75,39 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 | Left Menu Drawer (App Bar) | All Screens |
 | App Bar Menu Icons (App Bar - Float Right) | All Screens |
 | Floating Action Button (New Report) | All Screens | 
+
+### Libraries Used 
+| Library Name | Version |
+| --- | --- |
+| @material-ui/core | ^4.9.5 |
+| @material-ui/icons | ^4.9.1 |
+| @material-ui/lab | ^4.0.0-alpha.45 |
+| @mui-treasury/components | ^1.0.0 |
+| @mui-treasury/styles | ^1.0.0 |
+| @mui-treasury/styling | ^0.2.8 |
+| @testing-library/jest-dom | ^4.2.4 |
+| @testing-library/react | ^9.5.0 |
+| @testing-library/user-event | ^7.2.1 |
+| autosuggest-highlight | ^3.1.1 |
+| axios | ^0.19.2 |
+| bootstrap | ^4.4.1 |
+| dateformat | ^3.0.3 |
+| filepond | ^4.12.0 |
+| filepond-plugin-file-validate-size | ^2.2.1 |
+| filepond-plugin-file-validate-type | ^1.2.4 |
+| filepond-plugin-image-exif-orientation | ^1.0.6 |
+| filepond-plugin-image-preview | ^4.6.1 |
+| gh-pages | ^2.2.0 |
+| lodash | ^4.17.15 |
+| react | ^16.13.0 |
+| react-dom | ^16.13.0 |
+| react-filepond | ^7.0.1 |
+| react-google-maps | ^9.4.5 |
+| react-html5-camera-photo | ^1.5.4 |
+| react-places-autocomplete | ^7.2.1 |
+| react-router | ^5.1.2 |
+| react-router-dom | ^5.1.2 |
+| react-scripts | 3.4.0 |
+| reactstrap | ^8.4.1 |
+| recompose | ^0.30.0 |
 
