@@ -22,7 +22,7 @@ and tear, low budgets for the municipalities. Also, not to forget keeping people
 a task. So, this is an app aimed at solving the challenges mentioned. A reporting system,
 where the citizen can capture the scene of an area, which will be fed to a machine learning
 model that will geocode, validate and track down potholes in the scene. This has been
-achieved using object tracking on multiple images and developed using
+achieved by training for object tracking on multiple images and developed using
 convolutional neural networks. Users can see the damage on the roads using a
 mobile application or through their browsers. A dynamic report is also  generated for the closest authority of concern which they can view and update to
 create and manage work orders using their own jurisdiction-based web/mobile app-based
