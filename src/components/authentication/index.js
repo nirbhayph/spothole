@@ -211,10 +211,31 @@ class Auth extends Component {
     );
   };
 
+  // to check if user is blocked (in current session itself)
+  isBlocked = () => {
+    axios
+      .post(VALIDATE_USER, {
+        data: {
+          emailId: this.state.profileEmail
+        }
+      })
+      .then(response => {
+        if (response.data !== "allowed") {
+          this.logout(UA_LOGIN);
+          console.info("Unauthorized Login");
+        }
+      })
+      .catch(err => {
+        this.logout();
+        console.info("Cannot login at this time!");
+      });
+  };
+
   // on the basis of login status renders the associated component
   // and passes it the required params
   loginStatus() {
     if (localStorage.getItem("signedIn") === "true" && this.state.isSignedIn) {
+      this.isBlocked();
       switch (this.props.linkTo) {
         case "/dashboard":
           return (

@@ -107,7 +107,6 @@ const contentStylesX = makeStyles(({ spacing }) => {
 
 // for the step-based progress indicator
 const switchStatus = status => {
-  console.log(status, "ROs");
   if (status === "submitted") {
     return 0;
   } else if (status === "approved") {

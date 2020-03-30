@@ -22,6 +22,10 @@ import NavigationIcon from "@material-ui/icons/Navigation";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Link } from "react-router-dom";
+import ContactsIcon from "@material-ui/icons/Contacts";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import LoyaltyIcon from "@material-ui/icons/Loyalty";
 
 const drawerWidth = 240;
 
@@ -99,12 +103,19 @@ export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [appNameDisplay, setAppNameDisplay] = React.useState("block");
 
   const handleDrawerOpen = () => {
+    if (window.innerWidth < 500) {
+      setAppNameDisplay("none");
+    }
     setOpen(true);
   };
 
   const handleDrawerClose = () => {
+    if (window.innerWidth < 500) {
+      setAppNameDisplay("block");
+    }
     setOpen(false);
   };
 
@@ -128,9 +139,47 @@ export default function PersistentDrawerLeft() {
             <MenuIcon />
           </IconButton>
 
-          <Typography variant="h5" noWrap>
+          <Typography style={{ display: appNameDisplay }} variant="h5" noWrap>
             Spothole
           </Typography>
+          <div style={{ marginLeft: "auto" }}>
+            <IconButton aria-label="About Me" color="inherit">
+              <a
+                href="https://nirbhay.me"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ContactsIcon />
+              </a>
+            </IconButton>
+            <IconButton aria-label="GitHub" color="inherit">
+              <a
+                href="https://github.com/nirbhayph"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+            </IconButton>
+            <IconButton aria-label="LinkedIn" color="inherit">
+              <a
+                href="https://linkedin.com/in/nirbhaypherwani"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon />
+              </a>
+            </IconButton>
+            <IconButton aria-label="Acknowledgements" color="inherit">
+              <a
+                href="https://github.com/nirbhayph/spothole"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LoyaltyIcon />
+              </a>
+            </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer
