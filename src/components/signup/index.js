@@ -70,24 +70,19 @@ export default function SignInSide(props) {
         }}
       >
         <div className={classes.paper}>
-          <Typography
-            component="h1"
-            variant="h1"
-            style={{ marginTop: "100px" }}
-          >
-            <LogoDisplay />
+          <Typography component="h1" variant="h1" style={{ marginTop: "60px" }}>
+            <b>
+              <LogoDisplay />
+            </b>
           </Typography>
           <br />
-          <Typography component="h1" variant="h3">
-            <b>Spothole</b>
-          </Typography>
           <br />
           <Typography
             component="h1"
-            variant="h5"
+            variant="h4"
             style={{ marginTop: "100px" }}
           >
-            <b>Sign In</b>
+            <b>Citizen Log-In</b>
           </Typography>
           <Button
             type="submit"

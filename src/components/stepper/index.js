@@ -110,7 +110,6 @@ function getSteps(stepNumber) {
 }
 
 export default function CustomizedSteppers(props) {
-  const [activeStep, setActiveStep] = React.useState(props.stepNumber);
   const steps = getSteps(props.stepNumber);
   currentSteps = steps;
   return (

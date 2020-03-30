@@ -54,8 +54,8 @@ export default function LocationSearchInput(props) {
   const [inputValue, setInputValue] = React.useState("");
   const [options, setOptions] = React.useState([]);
   const [errorRequired, updateRequired] = React.useState(false);
-  const [currentLocation, setCurrentLocationValue] = React.useState("");
-  const [currentLatLngValue, setCurrentLatLngValue] = React.useState("");
+  const [currentLocation] = React.useState("");
+  const [currentLatLngValue] = React.useState("");
 
   const loaded = React.useRef(false);
 
