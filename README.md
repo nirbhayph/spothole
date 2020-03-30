@@ -12,10 +12,9 @@ condition as a matter of fact. And although it’s the responsibility of the aut
 sure the roads are free of damage, at times they overlook the problem, and most times don’t
 even know that the problem exists. According to “Safety Resource Center”, approximately
 3 Billion US Dollars are spent by motorists for repair of blown tires, busted axles, and other
-damage to their vehicles ("Study: Pothole Damage Costs U.S. Drivers $3B a Year," 2016).
-Over the past five years around 16 million drivers across the U.S. have suffered damage
+damage to their vehicles. Over the past five years around 16 million drivers across the U.S. have suffered damage
 from potholes as per an article from “American Automobile Association (AAA)”
-(Giarratana, 2018).
+
 
 Maintaining the road condition is a challenge with constant weather changes, wear
 and tear, low budgets for the municipalities. Also, not to forget keeping people informed is
@@ -209,3 +208,35 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 ### Deploying 
 
 The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
+
+## Note 
+For developers out there, if you wish to contribute to the project, feel free to do so. 
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Developer:
+- @nirbhayph - https://github.com/nirbhayph | https://linkedin.com/in/nirbhaypherwani | https://nirbhay.me | pherwani37@gmail.com
+
+## Acknowledgements and Mentions:
+
+* @reactjs - https://reactjs.org/
+* @material-design-react - https://material-ui.com/
+* @react-google-maps - https://www.npmjs.com/package/react-google-maps
+* @google-maps-api - https://developers.google.com/maps/documentation/javascript/
+* @google-oauth-gapi - https://developers.google.com/identity/protocols/oauth2
+* @mui-treasury - https://mui-treasury.com/
+* @axios - https://www.npmjs.com/package/axios
+* @filepond - https://www.npmjs.com/package/filepond
+* @dateformat - https://www.npmjs.com/package/dateformat
+* @AmericanAutomobileAssociation - https://www.aaa.com/stop/
+* @SafetyResourceCenter - https://www.trafficsafetystore.com/blog/the-plague-of-potholes-how-to-save-americas-roadways/
+* @loadash - https://lodash.com/
+* @create-react-app - https://reactjs.org/docs/create-a-new-react-app.html
+* @gh-pages - https://www.npmjs.com/package/gh-pages
+* @github - https://github.com
+* @roshniw - https://github.com/roshniw
+* @trello - https://trell.com
+* @figma - https://figma.com
+* @google-keep - https://keep.google.com
+* @npmjs - https://www.npmjs.com
