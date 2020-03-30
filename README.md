@@ -209,7 +209,7 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
 The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
 
-## Future Work
+### Future Work
 * Severity based direction renderer (User Interface Changes)
 * Adding additional parameters to the frontend after implemented in the backend. (Pothole Dimensions) 
 * Offline capabilities (Camera Componenet)
@@ -218,21 +218,21 @@ The citizen's application has been hosted through GitHub pages. Refer the link: 
 * News Feed 
 * Reward System 
 
-## Note 
+### Note 
 For developers out there, if you wish to contribute to the project, feel free to do so. 
 
-## License
+### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Developer
+### Developer
 
-### Nirbhay Pherwani 
+#### Nirbhay Pherwani 
 * GitHub - @nirbhayph - https://github.com/nirbhayph
 * LinkedIn - https://linkedin.com/in/nirbhaypherwani
 * Profile - https://nirbhay.me
 * Email - pherwani37@gmail.com
 
-## Acknowledgements and Mentions
+### Acknowledgements and Mentions
 
 * @reactjs - https://reactjs.org/
 * @material-design-react - https://material-ui.com/
