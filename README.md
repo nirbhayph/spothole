@@ -38,19 +38,41 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 ### Feature Stack 
 | Feature Name | Screen Name |
 | --- | --- |
-| Report a Pothole (Using Camera) | Report |
+| Report a Pothole (Using Camera, WebRTC)  | Report |
 | Report a Pothole (Using Media from the File System) | Report |
 | Deep Learning Powered Media Validation Check | Report |
 | Report Pothole Using Current Location | Report |
 | Report Pothole Using Custom Location (Auto Complete Search) | Report |
 | Severity Indicator (0-10) | Report |
 | Custom Text Area Description Box (For Additional Comments) | Report |
+| Custom Alerts (Single and Multi Actionables) | Report |
 | Successful Report Submission Feedback | Report |
 | Invalid Report Feedback (Powered by Deep Learning Results) | Report |
 | inified Report View Card (Summarized Report Details) | My Complaints |
 | Stepper Indicator (Report Status) | My Complaints, View Report |
 | Static Image based Geographic Map | View Report |
 | Disabled Severity Indicator | View Report |
-| Comments Section | View Report |
-
+| Comments Section (Communication Exchange Between Citizen and Authority) | View Report |
+| Custom Location Search (Auto Complete) | Route Navigation |
+| Custom Error Alerts | Route Navigation, Report |
+| Map Based Directions Renderer | Route Navigation |
+| Map Legend Indicating Severity Levels | Route Navigation |
+| Street View Renderer | Route Navigation |
+| Custom Markers for Potholes Distributed by Severity | Route Navigation |
+| Custom Info Window (When Clicked on Marker) | Route Navigation | 
+| Map Full Screen View | Route Navigation | 
+| Wrapper Function For IsLocationOnEdge (To Display Potholes Reported on the Route Chosen) | Route Navigation |
+| Estimated Time with Number of Miles | Route Navigation |
+| Pothole Count for the Route | Route Navigation |
+| Profile Details (Avatar, Name , Email Id) | Profile |
+| Citizen's Summarized Report Statistics Based on Status (Submitted, Approved, Completed) | Profile |
+| Awards Section Indicator for New Users | Profile |
+| Awards Section Badge for Users with at least One Report | Profile | 
+| Weighted Average Function for Calculting Badge Score | Profile |
+| Custom Random Background | Log In | 
+| O-Auth 2.0 Sign In | Log In |
+| Fixed App Bar | All Screens |
+| Left Menu Drawer (App Bar) | All Screens |
+| App Bar Menu Icons (App Bar - Float Right) | All Screens |
+| Floating Action Button (New Report) | All Screens | 
 
