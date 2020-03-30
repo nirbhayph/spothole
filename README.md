@@ -180,7 +180,7 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 4. Change the API KEY for Google Maps by creating a key from https://developers.google.com/maps/documentation/javascript/get-api-key. 
 5. Change the ClientId for Google Oauth from https://developers.google.com/identity/protocols/oauth2.
 6. Setup the flask and deep learning app on your machine by following the setup instructions for the backend. 
-7. Once your backend is working and you have tested the local apis using a tool like Postman change the api constants in the utility folder of the citizen app's src/component directory
+7. Once your backend is working and you have tested the local apis using a tool like Postman, change the api constants in the utility folder of the citizen app's src/component directory
 8. Finally, npm start
 9. Enjoy using the app. Feel free to make contributions and raise Pull Requests. 
 ```
@@ -188,3 +188,4 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
 ### Deploying 
 
+The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
