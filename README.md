@@ -79,7 +79,7 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 ### Libraries Used
 * The Application has been built using React.js
 * Material Design has been used throughout the App.
-* Material UI Icons have been used for icons. 
+* Material UI Icons have been used for Icons. 
 * MUI-Treasury Componenets have been used for additional needs (Like Card View in the My Complaints Screen)
 * Axios has been used for making REST Calls to the Backend.
 * FilePond and Supporting Libraries has been used for File Uploading to the Backend. 
@@ -120,4 +120,21 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 | react-router-dom | ^5.1.2 |
 | react-scripts | 3.4.0 |
 | recompose | ^0.30.0 |
+
+### Process Description
+The Citizen's App has been Divided into 6 Major Sections. 
+1. Create New Report
+2. My Complaints
+3. Route Navigation 
+4. Profile 
+5. Sign In Screen 
+
+* The users can navigate to the add a new report screen either by clicking on the floating action button at the bottom right or from the drawer by pressing the hamburger icon in the app bar. Here, users have the option to start their report by uploading an existing image of a pothole they clicked by browsing through the file system or by clicking a fresh photo using the inbuilt camera. Once users have decided on the method for uploading, the image under consideration is validated by the python based deep learning model placed on the backend server to verify if the image uploaded contains one or more potholes. If the media file contains one or mpre potholes, the users are presented with an option to share more details about their report. If not, users are presented with a feedback screen for an invalid image and the option to contact support. Assuming that the uploaded image is validated successfully, users are given the option to select a location (either current (presented after seeking permission)) or to enter a custom location. After which users are asked to use a progress indicator to specify how severe the reported pothole(s) is(are) according to them. Finally they are asked to give more details about their report through a required input text area componenet. Once the user has successfully submitted the report, they can now view the same using the My Complaints Screen. 
+* On signing into the app with their Google Accounts, users are presented with the My Complaints Screen. Existing users who have at least one report created can manage the status of their report and add additional comments to it or reply on comments from authorities using this section of the App. Users can click on any of the reports to view the detailed description for the report and monitor any notifications or to communicate with the authority through the chat section. 
+* 3
+* 4 
+* 5 OAuth2.0 Unsplash Logout Local Storage
+* Features associated with each screen have been mentioned in the feature stack table. 
+
+(Process Diagram Here)
 
