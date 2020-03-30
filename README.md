@@ -141,7 +141,7 @@ The Citizen's App has been Divided into 6 Major Sections.
   * Users can click on any of the reports to view the detailed description for the report and monitor any notifications or to communicate with the authority through the chat section. 
   
 #### 3. Route Navigation
-  * The screen presents the user with an option to enter the source and destination location. 
+  * This screen presents the user with an option to enter the source and destination location. 
   * After which a map is presented to the user based on the source and destination location entered by the user. A direction route is rendered on the map for the user. 
   * It displays the route with the marked potholes on the path which were approved by the authorities. It uses Google's Maps API to build the route. 
   * Custom markers for potholes with status approved ranging on severity are presented to the user on the route if they are close to the route.
@@ -151,10 +151,19 @@ The Citizen's App has been Divided into 6 Major Sections.
   * This screen can be used by any logged in user to monitor a route and the status for the different potholes on it and plan travel accordingly. 
   
 #### 4. Profile 
-  * 
+  * This screen contains the basic details (avatar, name, email address of the user) 
+  * It is then followed by a counter for reports with a status of either submitted, approved or completed. 
+  * Based on the above counters the user is assigned with a badge score indicating their contribution to the community. 
+  * This score is a weighted average score based on the counters mentioned above.  
+  * This score can later be used for rewarding the user. (TBD)
+  
 #### 5. Sign In Screen 
-  * OAuth2.0 Unsplash Logout Local Storage
-* Features associated with each screen have been mentioned in the feature stack table. 
+  * This screen contains the option to login using Google. 
+  * This uses Google's OAuth 2.0 GAPI for logging in the user. 
+  * This also uses the Unsplash API for generating random backgrounds on the side. (When in desktop mode)
+  * The app also uses local storage actively to maintain the session state every time in communication with GAPI. 
+  * OAuth2.0 Unsplash Logout Local Storage. 
+#### Note. Features associated with each screen have been mentioned in the feature stack table. 
 
 (Process Diagram Here)
 
