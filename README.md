@@ -82,7 +82,7 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 * Material UI Icons have been used for Icons. 
 * MUI-Treasury Componenets have been used for additional needs (Like Card View in the My Complaints Screen)
 * Axios has been used for making REST Calls to the Backend.
-* FilePond and Supporting Libraries has been used for File Uploading to the Backend. 
+* FilePond and Supporting Libraries have been used for File Uploading to the Backend. 
 * GitHub Pages has been used for Static Deployment of the Application. 
 * React Google Maps has been used for all Mapping, Direction Rendering, Geocoding and Reverse Geocoding Needs. 
 * React HTML5 Camera Component has been used for WebRTC based Media Capturing for Creating New Reports.
@@ -163,7 +163,7 @@ The Citizen's App has been Divided into 6 Major Sections.
   * This also uses the Unsplash API for generating random backgrounds on the side. (When in desktop mode)
   * The app also uses local storage actively to maintain the session state every time in communication with GAPI. 
   * OAuth2.0 Unsplash Logout Local Storage. 
-#### Note. Features associated with each screen have been mentioned in the feature stack table. 
+#### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
 
 (Process Diagram Here)
 
