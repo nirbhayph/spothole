@@ -215,7 +215,7 @@ For developers out there, if you wish to contribute to the project, feel free to
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Developer:
+## Developer
 
 ### Nirbhay Pherwani 
 * GitHub - @nirbhayph - https://github.com/nirbhayph
@@ -223,7 +223,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * Profile - https://nirbhay.me
 * Email - pherwani37@gmail.com
 
-## Acknowledgements and Mentions:
+## Acknowledgements and Mentions
 
 * @reactjs - https://reactjs.org/
 * @material-design-react - https://material-ui.com/
