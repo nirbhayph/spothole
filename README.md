@@ -76,7 +76,19 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 | App Bar Menu Icons (App Bar - Float Right) | All Screens |
 | Floating Action Button (New Report) | All Screens | 
 
-### Libraries Used 
+### Libraries Used
+* The Application has been built using React.js
+* Material Design has been used throughout the App.
+* Material UI Icons have been used for icons. 
+* MUI-Treasury Componenets have been used for additional needs (Like Card View in the My Complaints Screen)
+* Axios has been used for making REST Calls to the Backend.
+* FilePond and Supporting Libraries has been used for File Uploading to the Backend. 
+* GitHub Pages has been used for Static Deployment of the Application. 
+* React Google Maps has been used for all Mapping, Direction Rendering, Geocoding and Reverse Geocoding Needs. 
+* React HTML5 Camera Component has been used for WebRTC based Media Capturing for Creating New Reports.
+* Google Oauth 2.0 has been used Application Wide for Authentication Purposes. 
+
+#### Libarary Details
 | Library Name | Version |
 | --- | --- |
 | @material-ui/core | ^4.9.5 |
@@ -104,10 +116,8 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 | react-filepond | ^7.0.1 |
 | react-google-maps | ^9.4.5 |
 | react-html5-camera-photo | ^1.5.4 |
-| react-places-autocomplete | ^7.2.1 |
 | react-router | ^5.1.2 |
 | react-router-dom | ^5.1.2 |
 | react-scripts | 3.4.0 |
-| reactstrap | ^8.4.1 |
 | recompose | ^0.30.0 |
 
