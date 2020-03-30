@@ -35,6 +35,26 @@ When we look at the other side of the world, there is a similar situation as rep
 
 Keeping the roads in good condition along with tracking damages is a challenge with constant changes in weather, low budgets for the municipalities. Not to forget keeping the people informed is a task. This project was aimed at solving the challenges mentioned.
 
+### Important URLs
+
+#### Demo 
+Link to App Demo: https://nirbhay.me/spothole/
+
+#### Landing Page 
+Link to Landing Page: https://nirbhay.me/spothole/home
+
+#### Authority App Repository 
+Link to Authority App's Repository: https://github.com/nirbhayph/spothole.authority
+
+#### Flask and Deep Learning Backend Repository 
+Link to Backend Source Code: https://github.com/nirbhayph/spothole.backend
+
+#### Play Store Link 
+Link to Play Store: (TBD)
+
+#### Citizen's App Project Structure
+Link to Project's Directory Structure: https://nirbhay.me/spothole/ProjectStructure/
+
 ### Feature Stack 
 | Feature Name | Screen Name |
 | --- | --- |
@@ -189,7 +209,3 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 ### Deploying 
 
 The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
-
-### Project Structure
-
-Link to project's directory structure: https://nirbhay.me/spothole/ProjectStructure/
