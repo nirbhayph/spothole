@@ -235,7 +235,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * @create-react-app - https://reactjs.org/docs/create-a-new-react-app.html
 * @gh-pages - https://www.npmjs.com/package/gh-pages
 * @github - https://github.com
-* @roshniw - https://github.com/roshniw
+* @roshniw - https://roshniwadhwa.me
 * @trello - https://trell.com
 * @figma - https://figma.com
 * @google-keep - https://keep.google.com
