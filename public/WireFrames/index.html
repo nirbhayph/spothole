@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wireframes | Spothole Citizen App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center" style="background-color: #2997F7; color: #fafafa">
+      <h1>Spothole (Citizen App)</h1>
+      <p>
+        This page contains the wireframes for the <b>Spothole Citizen App (Mobile
+        Variant)</b>
+      </p>
+      <p>Wireframes have been designed using <b>Figma</b></p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D18%253A136%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-6">
+          <h3>Sign In Screen</h3>
+          <p>This screen represents the Google Login Screen</p>
+          <p>
+            It contains three main components. The background image (powered by
+            Unsplash), the Google Sign In Button and the App Logo.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>New Report Screen</h3>
+          <h6><i>(Navigate to see all screens)</i></h6>
+          <p>
+            Users have the option to start their report by uploading an existing
+            image of a pothole they clicked by browsing through the file system
+            or by clicking a fresh photo using the inbuilt camera.
+          </p>
+          <p>
+            Once users have decided on the method for uploading, the image under
+            consideration is validated by the python based deep learning model
+            placed on the backend server to verify if the image uploaded
+            contains one or more potholes.
+          </p>
+          <p>
+            If the media file contains one or mpre potholes, the users are
+            presented with an option to share more details about their report.
+          </p>
+          <p>
+            Assuming that the uploaded image is validated successfully, users
+            are given the option to select a location (either current (presented
+            after seeking permission)) or to enter a custom location
+          </p>
+          <p>
+            After which users are asked to use a progress indicator to specify
+            how severe the reported pothole(s) is(are) according to them.
+          </p>
+          <p>
+            Finally they are asked to give more details about their report
+            through a required input text area componenet. Once the user has
+            successfully submitted the report, they can now view the same using
+            the My Complaints Screen.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D6%253A59%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D1%253A6%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-6">
+          <h3>My Complaints Screen</h3>
+          <h6><i>(Navigate to see all screens)</i></h6>
+          <p>
+            On signing into the app with their Google Accounts, users are
+            presented with the My Complaints Screen.
+          </p>
+          <p>
+            Existing users who have at least one report created can manage the
+            status of their report and add additional comments to it or reply on
+            comments from authorities using this section of the App.
+          </p>
+          <p>
+            Users can click on any of the reports to view the detailed
+            description for the report and monitor any notifications or to
+            communicate with the authority through the chat section.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Route Navigation Screen</h3>
+          <h6><i>(Navigate to see all screens)</i></h6>
+          <p>
+            This screen presents the user with an option to enter the source and
+            destination location.
+          </p>
+          <p>
+            After which a map is presented to the user based on the source and
+            destination location entered by the user. A direction route is
+            rendered on the map for the user.
+          </p>
+          <p>
+            It displays the route with the marked potholes on the path which
+            were approved by the authorities. It uses Google's Maps API to build
+            the route.
+          </p>
+          <p>
+            Custom markers for potholes with status approved ranging on severity
+            are presented to the user on the route if they are close to the
+            route.
+          </p>
+          <p>
+            It determines if a pothole is assocaited with a path using the
+            'isLocationOnEdge' library function provided by Google Maps.
+          </p>
+          <p>
+            A legend explaining the different attributes of the map is presented
+            to the user.
+          </p>
+          <p>Also, there is a street view renderer for the users.</p>
+          <p>
+            This screen can be used by any logged in user to monitor a route and
+            the status for the different potholes on it and plan travel
+            accordingly.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D24%253A71%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D7%253A5%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-6">
+          <h3>Profile Screen</h3>
+          <h6><i>(Navigate to see all screens)</i></h6>
+          <p>
+            This screen contains the basic details (avatar, name, email address
+            of the user)
+          </p>
+          <p>
+            It is then followed by a counter for reports with a status of either
+            submitted, approved or completed.
+          </p>
+          <p>
+            Based on the above counters the user is assigned with a badge score
+            indicating their contribution to the community.
+          </p>
+          <p>
+            This score is a weighted average score based on the counters
+            mentioned above.
+          </p>
+          <p>This score can later be used for rewarding the user. (TBD)</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <footer
+      class="container-fluid bg-4 text-center"
+      style="background-color: #212121; padding-top: 20px; padding-bottom: 20px; color: #fafafa"
+    >
+      <h2>Wireframes Built With <b>Figma</b></h2>
+      <p>
+        <h3>Nirbhay Pherwani</h3> <br />
+        <a href="https://nirbhay.me"><h4>About Me</h4></a> 
+        <a href="mailto:pherwani37@gmail.com"><h4>pherwani37@gmail.com</h4></a>
+        <a href="https://github.com/nirbhayph/spothole"><h4>Spothole Citizen App on GitHub</h4></a>
+        <br/>
+        <h4>Special Thanks to Roshni Wadhwa!</h4>
+        <h4>Master's Student in Human Computer Interaction @ RIT</h4>
+        <a href="https://roshniwadhwa.me"><h4>Roshni Wadhwa (About)</h4></a> 
+      </p>
+    </footer>
+  </body>
+</html>
