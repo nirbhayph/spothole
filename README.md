@@ -221,7 +221,7 @@ The citizen's application has been hosted through GitHub pages. Refer the link: 
 * Reward System 
 
 ### Note 
-For developers out there, if you wish to contribute to the project, feel free to do so. 
+For developers out there, if you wish to contribute to the project, feel free to do so. Please review the future work section and create pull requests for ideas and thoughts. Once approved, we can follow up with more discussions.
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
