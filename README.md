@@ -212,9 +212,10 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
 
 ### Future Work
-* Severity based direction renderer (User Interface Changes)
-* Adding additional parameters to the frontend after implemented in the backend. (Pothole Dimensions) 
-* Offline capabilities (Camera Componenet)
+* Severity based Direction Renderer (User Interface Changes)
+* Adding Additional Parameters to the Frontend after Implemented in the Backend. (Pothole Dimensions) 
+* Navigation 
+* Offline Capabilities (Camera Componenet)
 * Realtime Notifications (In-App)
 * Linking Social Platforms (Twitter)
 * News Feed 
