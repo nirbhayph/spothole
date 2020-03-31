@@ -257,3 +257,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * @figma - https://figma.com
 * @google-keep - https://keep.google.com
 * @npmjs - https://www.npmjs.com
+* @snap2html - https://www.rlvision.com/snap2html/about.php
