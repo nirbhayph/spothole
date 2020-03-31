@@ -94,6 +94,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole/ProjectStruct
 | Left Menu Drawer (App Bar) | All Screens |
 | App Bar Menu Icons (App Bar - Float Right) | All Screens |
 | Floating Action Button (New Report) | All Screens | 
+| 404, 401 | Error Pages |
 
 ### Libraries Used
 * The Application has been built using React.js
