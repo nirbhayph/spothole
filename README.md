@@ -46,7 +46,7 @@ Link to Landing Page: https://nirbhay.me/spothole/home
 Link to Authority App's Repository: https://github.com/nirbhayph/spothole.authority
 
 #### Flask and Deep Learning Backend Repository 
-Link to Backend Source Code: https://github.com/nirbhayph/spothole.backend
+Link to Backend Source Code: https://github.com/nirbhayph/spothole.core
 
 #### Play Store Link 
 Link to Play Store: (TBD)
