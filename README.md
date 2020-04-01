@@ -263,6 +263,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Here are some screenshots from the citizen app. 
 
+<a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/21.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/21.png" align="left" height="540" width="270" alt="21"></a>
 <a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/1.png" align="left" height="540" width="270" alt="1"></a>
 <a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/2.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/2.png" align="left" height="540" width="270" alt="2"></a>
 <a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/5.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/5.png" align="left" height="540" width="270" alt="5"></a>
@@ -281,4 +282,3 @@ Here are some screenshots from the citizen app.
 <a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/18.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/18.png" align="left" height="540" width="270" alt="18"></a>
 <a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/19.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/19.png" align="left" height="540" width="270" alt="19"></a>
 <a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/20.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/20.png" align="left" height="540" width="270" alt="20"></a>
-<a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/21.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/21.png" align="left" height="540" width="270" alt="21"></a>
