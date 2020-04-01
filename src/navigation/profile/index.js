@@ -39,6 +39,7 @@ class Profile extends React.Component {
           res.data.filter(report => {
             return report.status === "submitted";
           }).length + approvedCount;
+
         let score = Math.ceil(
           (parseFloat(approvedCount / submittedCount) * 0.7 +
             parseFloat(completedCount / approvedCount) * 0.3) *
