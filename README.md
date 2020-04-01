@@ -189,6 +189,10 @@ The Citizen's App has been Divided into 6 Major Sections.
 
 <img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/SystemDiagram/Citizen_App_System_Diagram_White_Bg.png"/>
 
+#### Citizen App's Wireframes
+
+Please visit this link to view the detailed wireframes for the app. https://nirbhay.me/spothole/WireFrames/
+
 ### Instructions to Set-Up the Citizen Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
