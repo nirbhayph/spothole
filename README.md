@@ -263,6 +263,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Here are some screenshots from the citizen app. 
 
-<a href="https://github.com/nirbhayph/spothole/blob/develop/build/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/build/Screenshots/MobileView/1.png" align="left" height="540" width="270" alt="1"></a>
-<a href="https://github.com/nirbhayph/spothole/blob/develop/build/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/build/Screenshots/MobileView/2.png" align="left" height="540" width="270" alt="2"></a>
-<a href="https://github.com/nirbhayph/spothole/blob/develop/build/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/build/Screenshots/MobileView/3.png" align="left" height="540" width="270" alt="3"></a>
+<a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/1.png" align="left" height="540" width="270" alt="1"></a>
+<a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/2.png" align="left" height="540" width="270" alt="2"></a>
+<a href="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/1.png"><img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/MobileView/3.png" align="left" height="540" width="270" alt="3"></a>
