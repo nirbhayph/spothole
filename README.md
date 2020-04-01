@@ -185,7 +185,7 @@ The Citizen's App has been Divided into 6 Major Sections.
   * OAuth2.0 Unsplash Logout Local Storage. 
 #### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
 
-#### System Diagram 
+### System Level Diagram 
 
 <img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/SystemDiagram/Citizen_App_System_Diagram_White_Bg.png"/>
 
