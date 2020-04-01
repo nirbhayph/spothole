@@ -189,7 +189,7 @@ The Citizen's App has been Divided into 6 Major Sections.
 
 <img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/SystemDiagram/Citizen_App_System_Diagram_White_Bg.png"/>
 
-#### Citizen App's Wireframes
+### Citizen App's Wireframes
 
 Please visit this link to view the detailed wireframes for the app. https://nirbhay.me/spothole/WireFrames/
 
