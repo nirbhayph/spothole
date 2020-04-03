@@ -142,7 +142,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole/ProjectStruct
 | recompose | ^0.30.0 |
 
 ### Process Description
-The Citizen's App has been Divided into 6 Major Sections. 
+The Citizen's App has been Divided into 5 Major Sections. 
 
 #### 1. Create New Report
   * The users can navigate to the add a new report screen either by clicking on the floating action button at the bottom right or from the drawer by pressing the hamburger icon in the app bar. 
