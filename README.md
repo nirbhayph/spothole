@@ -4,6 +4,13 @@
 
 ## Spothole Citizen Web/Mobile App
 
+This project is the <b>Front End Reporting Segment for the Capstone Project</b> for my <b>Master's in Information Sciences and Technologies</b> at <b>Rochester Institute of Technology</b>. 
+
+### Project Committee Members: 
+ * Dr. Charles Border
+ * Prof. Edward Holden
+ * Prof. Bryan French
+
 ### Introduction
 
 A major problem being faced by municipalities around the world is maintaining the
