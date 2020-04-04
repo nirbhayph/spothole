@@ -41,6 +41,11 @@ When we look at the other side of the world, there is a similar situation as rep
 
 Keeping the roads in good condition along with tracking damages is a challenge with constant changes in weather, low budgets for the municipalities. Not to forget keeping the people informed is a task. This project was aimed at solving the challenges mentioned.
 
+### App Preview
+
+#### From Wire Frames to Reality! 
+<img src="https://media.giphy.com/media/Q7pFE51bnytSQrbd3s/giphy.gif"/>
+
 ### Important URLs
 
 #### Demo 
