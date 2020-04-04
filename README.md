@@ -49,17 +49,11 @@ Link to App Demo: https://nirbhay.me/spothole/
 #### Citizen's App Wire Frames
 Link to App Wire Frames: https://nirbhay.me/spothole/WireFrames/
 
-#### Landing Page 
-Link to Landing Page: https://nirbhay.me/spothole/home
-
 #### Authority App Repository 
 Link to Authority App's Repository: https://github.com/nirbhayph/spothole.authority
 
 #### Flask and Deep Learning Backend Repository 
 Link to Backend Source Code: https://github.com/nirbhayph/spothole.core
-
-#### Play Store Link 
-Link to Play Store: (TBD)
 
 #### Citizen's App Project Structure
 Link to Project's Directory Structure: https://nirbhay.me/spothole/ProjectStructure/
