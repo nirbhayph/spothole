@@ -13,21 +13,22 @@ import PinDropIcon from "@material-ui/icons/PinDrop";
 import SeverityIndicator from "./../severity_indicator";
 import HeaderTextCard from "./../header_text_card";
 import Comments from "./../comments";
+import { GOOGLE_MAPS_API_KEY } from "./../../utility/constants.js";
 import "./css/modal_data_card.css";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 700
+    maxWidth: 700,
   },
   media: {
-    height: 140
+    height: 140,
   },
   mediaMap: {
-    height: 200
+    height: 200,
   },
   headerTextColor: {
-    color: "white"
-  }
+    color: "white",
+  },
 });
 
 export default function DetailedDataCard(props) {
@@ -41,7 +42,9 @@ export default function DetailedDataCard(props) {
     props.data.latitude +
     "," +
     props.data.longitude +
-    "&key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ&zoom=15";
+    "&key=" +
+    GOOGLE_MAPS_API_KEY +
+    "&zoom=15";
   return (
     <Card
       style={{ border: "2px solid rgba(255,255,255,0.1)" }}

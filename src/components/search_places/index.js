@@ -17,6 +17,7 @@ import throttle from "lodash/throttle";
 import axios from "axios";
 import { Chip } from "@material-ui/core";
 import AddLocationIcon from "@material-ui/icons/AddLocation";
+import { GOOGLE_MAPS_API_KEY } from "./../../utility/constants.js";
 
 function loadScript(src, position, id) {
   if (!position) {
@@ -32,21 +33,21 @@ function loadScript(src, position, id) {
 
 const autocompleteService = { current: null };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.text.secondary,
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   textInput: {
-    marginBottom: "10px"
+    marginBottom: "10px",
   },
   labelText: {
     marginTop: "25px",
-    marginBottom: "10px"
+    marginBottom: "10px",
   },
   buttonCurrentLocation: {
-    marginBottom: "15px"
-  }
+    marginBottom: "15px",
+  },
 }));
 
 export default function LocationSearchInput(props) {
@@ -62,7 +63,9 @@ export default function LocationSearchInput(props) {
   if (typeof window !== "undefined" && !loaded.current) {
     if (!document.querySelector("#google-maps")) {
       loadScript(
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ&libraries=places",
+        "https://maps.googleapis.com/maps/api/js?key=" +
+          GOOGLE_MAPS_API_KEY +
+          "&libraries=places",
         document.querySelector("head"),
         "google-maps"
       );
@@ -71,7 +74,7 @@ export default function LocationSearchInput(props) {
     loaded.current = true;
   }
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setInputValue(event.target.value);
     if (event.target.value.trim() !== "") {
       updateRequired(false);
@@ -110,7 +113,7 @@ export default function LocationSearchInput(props) {
       return undefined;
     }
 
-    fetch({ input: inputValue }, results => {
+    fetch({ input: inputValue }, (results) => {
       if (active) {
         setOptions(results || []);
       }
@@ -127,9 +130,10 @@ export default function LocationSearchInput(props) {
         .get(
           "https://maps.googleapis.com/maps/api/geocode/json?place_id=" +
             value.place_id +
-            "&key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ"
+            "&key=" +
+            GOOGLE_MAPS_API_KEY
         )
-        .then(res => {
+        .then((res) => {
           props.updateLocation(
             value.description,
             res["data"]["results"][0]["geometry"]["location"]
@@ -147,17 +151,17 @@ export default function LocationSearchInput(props) {
       </Typography>
       <Autocomplete
         id="google-map-demo"
-        getOptionLabel={option =>
+        getOptionLabel={(option) =>
           typeof option === "string" ? option : option.description
         }
-        filterOptions={x => x}
+        filterOptions={(x) => x}
         options={options}
         autoComplete
         includeInputInList
         disableOpenOnFocus
         fullWidth
         onChange={handleAutoChange}
-        renderInput={params => (
+        renderInput={(params) => (
           <TextField
             {...params}
             //required
@@ -169,12 +173,12 @@ export default function LocationSearchInput(props) {
             onChange={handleChange}
           />
         )}
-        renderOption={option => {
+        renderOption={(option) => {
           const matches =
             option.structured_formatting.main_text_matched_substrings;
           const parts = parse(
             option.structured_formatting.main_text,
-            matches.map(match => [match.offset, match.offset + match.length])
+            matches.map((match) => [match.offset, match.offset + match.length])
           );
 
           return (

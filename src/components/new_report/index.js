@@ -19,16 +19,19 @@ import DescriptionBox from "./../description";
 import AlertDialog from "./../alert_dialog";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { SUBMIT_USER_REPORT } from "./../../utility/constants.js";
+import {
+  SUBMIT_USER_REPORT,
+  GOOGLE_MAPS_API_KEY,
+} from "./../../utility/constants.js";
 
-const useStyles = theme => ({
+const useStyles = (theme) => ({
   root: {
     maxWidth: "100%",
     marginRight: "10%",
     marginLeft: "10%",
     marginTop: "120px",
-    marginBottom: "30px"
-  }
+    marginBottom: "30px",
+  },
 });
 
 let self;
@@ -48,7 +51,7 @@ class CreateReport extends React.Component {
       showSubmittedFeedback: false,
       permissionLocation: "",
       permissionLocationLatLng: "",
-      userId: props.userId
+      userId: props.userId,
     };
 
     self = this;
@@ -60,7 +63,7 @@ class CreateReport extends React.Component {
     if (this.state.location !== location) {
       self.setState({
         location: location,
-        locationLatLng: latLngLocation
+        locationLatLng: latLngLocation,
       });
     }
   };
@@ -69,28 +72,29 @@ class CreateReport extends React.Component {
     if (this.state.location !== location) {
       self.setState({
         permissionLocation: location,
-        permissionLocationLatLng: latLngLocation
+        permissionLocationLatLng: latLngLocation,
       });
     }
   };
 
-  showPosition = position => {
+  showPosition = (position) => {
     axios
       .get(
         "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
           position.coords.latitude +
           "," +
           position.coords.longitude +
-          "&key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ"
+          "&key=" +
+          GOOGLE_MAPS_API_KEY
       )
       .then(
-        result => {
+        (result) => {
           this.setPermissionBasedLocation(
             result["data"]["results"][0]["formatted_address"],
             result["data"]["results"][0]["geometry"]["location"]
           );
         },
-        error => {
+        (error) => {
           console.info("Cannot update current location");
         }
       );
@@ -104,27 +108,27 @@ class CreateReport extends React.Component {
     }
   };
 
-  setSeverity = severity => {
+  setSeverity = (severity) => {
     self.setState({
-      severity: severity
+      severity: severity,
     });
   };
 
-  setDescription = description => {
+  setDescription = (description) => {
     self.setState({
-      description: description
+      description: description,
     });
   };
 
   updateCloseDialogState = () => {
     self.setState({
-      dialogOpenState: false
+      dialogOpenState: false,
     });
   };
 
   updateCancelDialogState = () => {
     self.setState({
-      cancelDialogOpenState: false
+      cancelDialogOpenState: false,
     });
   };
 
@@ -147,11 +151,11 @@ class CreateReport extends React.Component {
       this.state.severity === ""
     ) {
       this.setState({
-        dialogOpenState: true
+        dialogOpenState: true,
       });
     } else {
       this.setState({
-        dialogOpenState: false
+        dialogOpenState: false,
       });
       axios
         .post(SUBMIT_USER_REPORT, {
@@ -161,31 +165,31 @@ class CreateReport extends React.Component {
             locationLatLng: postLocationLatLng,
             imageURL: this.state.imageURL,
             userId: this.state.userId,
-            severity: this.state.severity
-          }
+            severity: this.state.severity,
+          },
         })
         .then(
-          res => {
+          (res) => {
             this.setState({
-              showSubmittedFeedback: true
+              showSubmittedFeedback: true,
             });
           },
-          err => {
+          (err) => {
             console.info("Problem with submitting your report");
           }
         );
     }
   };
 
-  makeEmpty = makeBoxEmpty => {
+  makeEmpty = (makeBoxEmpty) => {
     self.setState({
-      makeBoxEmptyFunction: makeBoxEmpty
+      makeBoxEmptyFunction: makeBoxEmpty,
     });
   };
 
   showCancelAlert = () => {
     self.setState({
-      cancelDialogOpenState: true
+      cancelDialogOpenState: true,
     });
   };
 

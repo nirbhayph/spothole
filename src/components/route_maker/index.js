@@ -16,33 +16,36 @@ import {
   GoogleMap,
   DirectionsRenderer,
   Marker,
-  InfoWindow
+  InfoWindow,
 } from "react-google-maps";
 import {
   GET_ALL_REPORTS,
   ROUTE_ICON_IMAGE_HIGH,
   ROUTE_ICON_IMAGE_MEDIUM,
-  ROUTE_ICON_IMAGE_LOW
+  ROUTE_ICON_IMAGE_LOW,
+  GOOGLE_MAPS_API_KEY,
 } from "./../../utility/constants.js";
 
 const MapWithADirectionsRenderer = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=" +
+      GOOGLE_MAPS_API_KEY +
+      "&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
-    mapElement: <div style={{ height: `100%` }} />
+    mapElement: <div style={{ height: `100%` }} />,
   }),
   withStateHandlers(
     () => ({
       isOpen: false,
-      infoIndex: null
+      infoIndex: null,
     }),
     {
-      onToggleOpen: ({ isOpen, infoIndex }) => index => ({
+      onToggleOpen: ({ isOpen, infoIndex }) => (index) => ({
         isOpen: !isOpen,
-        infoIndex: index
-      })
+        infoIndex: index,
+      }),
     }
   ),
   withScriptjs,
@@ -60,19 +63,19 @@ const MapWithADirectionsRenderer = compose(
             parseFloat(this.props.endLat),
             parseFloat(this.props.endLng)
           ),
-          travelMode: google.maps.TravelMode.DRIVING
+          travelMode: google.maps.TravelMode.DRIVING,
         },
         (result, status) => {
           if (status === google.maps.DirectionsStatus.OK) {
             let self = this;
             let selectedReports = [];
-            axios.post(GET_ALL_REPORTS).then(res => {
+            axios.post(GET_ALL_REPORTS).then((res) => {
               res.data.forEach((item, i) => {
                 if (
                   google.maps.geometry.poly.isLocationOnEdge(
                     new google.maps.LatLng(item.latitude, item.longitude),
                     new google.maps.Polyline({
-                      path: result.routes[0].overview_path
+                      path: result.routes[0].overview_path,
                     }),
                     0.001
                   )
@@ -83,7 +86,7 @@ const MapWithADirectionsRenderer = compose(
 
               self.setState({
                 directions: result,
-                selectedReports: selectedReports
+                selectedReports: selectedReports,
               });
               this.props.manageCounts(
                 selectedReports.length,
@@ -99,15 +102,15 @@ const MapWithADirectionsRenderer = compose(
           }
         }
       );
-    }
+    },
   })
-)(props => {
+)((props) => {
   return (
     <GoogleMap
       defaultZoom={8}
       defaultCenter={{
         lat: parseFloat(props.centerLat),
-        lng: parseFloat(props.centerLng)
+        lng: parseFloat(props.centerLng),
       }}
     >
       {props.directions && <DirectionsRenderer directions={props.directions} />}
@@ -133,7 +136,7 @@ const MapWithADirectionsRenderer = compose(
             key={index}
             position={{
               lat: parseFloat(report.latitude),
-              lng: parseFloat(report.longitude)
+              lng: parseFloat(report.longitude),
             }}
             onClick={() => props.onToggleOpen(index)}
           >
@@ -148,7 +151,7 @@ const MapWithADirectionsRenderer = compose(
                     display: "flex",
                     justifyContent: "space-between",
                     marginTop: "3px",
-                    marginRight: "3px"
+                    marginRight: "3px",
                   }}
                 >
                   <div
@@ -157,7 +160,7 @@ const MapWithADirectionsRenderer = compose(
                       paddingRight: "10px",
                       paddingBottom: "10px",
                       fontWeight: "bold",
-                      lineHeight: 1.5
+                      lineHeight: 1.5,
                     }}
                   >
                     Reported On: {report.created_date.split(" ")[0]}
@@ -176,7 +179,7 @@ const MapWithADirectionsRenderer = compose(
                         border: "2px solid black",
                         borderRadius: "10px",
                         marginRight: "10px",
-                        marginBottom: "10px"
+                        marginBottom: "10px",
                       }}
                       alt={"Validated Pothole"}
                     />

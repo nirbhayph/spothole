@@ -1,6 +1,7 @@
 // all server and image constants.
 export const CLIENT_ID =
   "53865530561-eoook3l9t27uvkec6561d3aolde6mims.apps.googleusercontent.com";
+export const GOOGLE_MAPS_API_KEY = "AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ";
 export const AWS_SERVER_DOMAIN = "https://spothole.ml:5000";
 export const GET_ALL_REPORTS = AWS_SERVER_DOMAIN + "/api/reports/all";
 export const GET_USER_REPORTS = AWS_SERVER_DOMAIN + "/api/reports";
