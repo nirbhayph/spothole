@@ -180,7 +180,7 @@
     color: #444;
   }
   .header-area {
-    border-bottom: 1px solid #ededed;
+    /* border-bottom: 1px solid #ededed; */
   }
   .about-us-area.style-two .feature-list .single-feature-list {
     width: calc(50% - 30px);
@@ -507,7 +507,7 @@
     display: none;
   }
   .header-area {
-    border-bottom: 1px solid #e2e2e2;
+    /* border-bottom: 1px solid #e2e2e2; */
   }
   .header-area .header-inner .title {
     font-size: 50px;
