@@ -48,6 +48,9 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 
 ### Important URLs
 
+#### Home (Landing Page)
+Link to Landing Page: https://nirbhay.me/spothole/home
+
 #### Demo 
 Link to App Demo: https://nirbhay.me/spothole/
 
