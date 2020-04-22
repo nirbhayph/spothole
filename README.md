@@ -99,7 +99,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole/ProjectStruct
 | Citizen's Summarized Report Statistics Based on Status (Submitted, Approved, Completed) | Profile |
 | Awards Section Indicator for New Users | Profile |
 | Awards Section Badge for Users with at least One Report | Profile | 
-| Weighted Average Function for Calculting Badge Score | Profile |
+| Weighted Average Function for Calculating Badge Score | Profile |
 | Custom Random Background | Log In | 
 | O-Auth 2.0 Sign In | Log In |
 | Fixed App Bar | All Screens |
@@ -112,7 +112,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole/ProjectStruct
 * The Application has been built using React.js
 * Material Design has been used throughout the App.
 * Material UI Icons have been used for Icons. 
-* MUI-Treasury Componenets have been used for additional needs (Like Card View in the My Complaints Screen)
+* MUI-Treasury Components have been used for additional needs (Like Card View in the My Complaints Screen)
 * Axios has been used for making REST Calls to the Backend.
 * FilePond and Supporting Libraries have been used for File Uploading to the Backend. 
 * GitHub Pages has been used for Static Deployment of the Application. 
@@ -160,11 +160,11 @@ The Citizen's App has been Divided into 5 Major Sections.
   * The users can navigate to the add a new report screen either by clicking on the floating action button at the bottom right or from the drawer by pressing the hamburger icon in the app bar. 
   * Here, users have the option to start their report by uploading an existing image of a pothole they clicked by browsing through the file system or by clicking a fresh photo using the inbuilt camera. 
   * Once users have decided on the method for uploading, the image under consideration is validated by the python based deep learning model placed on the backend server to verify if the image uploaded contains one or more potholes. 
-  * If the media file contains one or mpre potholes, the users are presented with an option to share more details about their report. 
+  * If the media file contains one or more potholes, the users are presented with an option to share more details about their report. 
   * If not, users are presented with a feedback screen for an invalid image and the option to contact support.
   * Assuming that the uploaded image is validated successfully, users are given the option to select a location (either current (presented after seeking permission)) or to enter a custom location. 
   * After which users are asked to use a progress indicator to specify how severe the reported pothole(s) is(are) according to them.    
-  * Finally they are asked to give more details about their report through a required input text area componenet. 
+  * Finally they are asked to give more details about their report through a required input text area component. 
   * Once the user has successfully submitted the report, they can now view the same using the My Complaints Screen. 
 
 #### 2. My Complaints
@@ -177,7 +177,7 @@ The Citizen's App has been Divided into 5 Major Sections.
   * After which a map is presented to the user based on the source and destination location entered by the user. A direction route is rendered on the map for the user. 
   * It displays the route with the marked potholes on the path which were approved by the authorities. It uses Google's Maps API to build the route. 
   * Custom markers for potholes with status approved ranging on severity are presented to the user on the route if they are close to the route.
-  * It determines if a pothole is assocaited with a path using the 'isLocationOnEdge' library function provided by Google Maps.
+  * It determines if a pothole is associated with a path using the 'isLocationOnEdge' library function provided by Google Maps.
   * A legend explaining the different attributes of the map is presented to the user. 
   * Also, there is a street view renderer for the users. 
   * This screen can be used by any logged in user to monitor a route and the status for the different potholes on it and plan travel accordingly. 
@@ -243,7 +243,7 @@ The citizen's application has been hosted through GitHub pages. Refer the link: 
 * Severity based Direction Renderer (User Interface Changes)
 * Adding Additional Parameters to the Frontend after Implemented in the Backend. (Pothole Dimensions) 
 * Navigation 
-* Offline Capabilities (Camera Componenet)
+* Offline Capabilities (Camera Component)
 * Realtime Notifications (In-App)
 * Linking Social Platforms (Twitter)
 * News Feed 
