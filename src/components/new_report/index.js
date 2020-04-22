@@ -297,8 +297,8 @@ class CreateReport extends React.Component {
                   There does not seem to be a pothole in this image. Please
                   retry with a different image. If you feel you have uploaded a
                   correct image feel free to email us at{" "}
-                  <a href="mailto:support.spothole@gmail.com">
-                    support.spothole@gmail.com
+                  <a href="mailto:contact.spothole@gmail.com">
+                    contact.spothole@gmail.com
                   </a>
                 </Typography>
               </CardContent>
@@ -354,8 +354,8 @@ class CreateReport extends React.Component {
                     Keep a track of your report through the comments section and
                     feel free to exchange more thoughts with the concerned
                     authority too. You can even email us at{" "}
-                    <a href="mailto:support.spothole@gmail.com">
-                      support.spothole@gmail.com
+                    <a href="mailto:contact.spothole@gmail.com">
+                      contact.spothole@gmail.com
                     </a>{" "}
                     for more questions.
                   </Typography>
